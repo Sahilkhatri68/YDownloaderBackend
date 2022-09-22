@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
     res.json({ message: "Youtube downloader api is working " })
 })
 
-const allowedOrigins = ["http://localhost:3001", "http://localhost:3000", "http://localhost:4000"];
+const allowedOrigins = ["http://localhost:3001", "http://localhost:3000", "http://localhost:4000","http://127.0.0.1:5500"];
 app.use(
     cors({
         origin: allowedOrigins,
